@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--heroikka-color-primary: #EF476F;
+	--heroikka-color-secondary: #02DAF6;
+	--heroikka-color-tertiary: #FFC43D;
+	--heroikka-color-dark: #29313A;
+	--heroikka-font-default: "Poppins", sans-serif;
+	--heroikka-font-heading: "Times", serif;
+}
+
+body {
+	font-family: var(--heroikka-font-default);
+	font-style: normal;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav {
+	background: #fff;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem 3rem;
+	align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+	nav {
+		flex-direction: column;
+		gap: 20px;
+	}
+}
+
+
+
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 46px;
+}
+
+nav a {
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.btn {
+	padding: 20px 45px;
+	background: var(--heroikka-color-primary);
+	border-radius: 35px;
+	color: #fff;
+
+	&:hover {
+		background: #AB3954;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.btn {
+		padding: 15px 35px;
+	}
+}
+
+
+h1 {
+	font-family: var(--heroikka-font-heading);
+	font-size: 70px;
+}
+
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 50px;
+	}
+}
+
+
+
+
+.testimonial {
+	background: var(--heroikka-color-primary);
+	padding: 4rem 3rem;
+	display: flex;
+}
+
+@media screen and (max-width: 900px) {
+	.testimonial {
+		flex-direction: column;
+	}
+}
+
+.testimonial img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 100%;
+}
+
+
+
+
